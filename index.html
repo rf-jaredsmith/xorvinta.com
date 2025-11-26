@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xorvinta – Dragon-Forged Board Game Manufacturing</title>
+
+    <!-- Fantasy display font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            background: #1b1b20;
+            color: #f5f3f3;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        header {
+            background: url('https://images.unsplash.com/photo-1608170832437-3fa7e4f44384?auto=format&fit=crop&w=1600&q=60') center/cover no-repeat;
+            padding: 4rem 1rem;
+            text-align: center;
+            position: relative;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.55);
+        }
+
+        header * {
+            position: relative;
+            z-index: 2;
+        }
+
+        header h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 3.25rem;
+            margin: 0;
+            color: #e13a3a;
+            text-shadow: 0 0 10px #000;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            margin-top: 0.5rem;
+            color: #ffdf9a;
+        }
+
+        nav {
+            margin-top: 1.5rem;
+        }
+
+        nav a {
+            margin: 0 1rem;
+            color: #ffdf9a;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #ffd65c;
+            text-shadow: 0 0 10px rgba(255,214,92,0.8);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 3rem auto;
+            text-align: center;
+        }
+
+        .card {
+            background: #26262e;
+            border: 2px solid #3c1a1a;
+            padding: 2.2rem;
+            margin: 1.75rem 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 22px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            font-family: 'Cinzel', serif;
+            color: #e13a3a;
+            font-size: 2.1rem;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            text-align: left;
+            display: inline-block;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 1.2rem;
+            padding: 0.8rem 1.6rem;
+            background: #e13a3a;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: 0.2s ease;
+        }
+
+        .btn:hover {
+            background: #b72020;
+        }
+
+        footer {
+            background: #141417;
+            color: #b5b5b5;
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 0.92rem;
+            margin-top: 2rem;
+        }
+
+        .dragon-emblem {
+            width: 85px;
+            margin: 0 auto 1rem;
+            opacity: 0.95;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Xorvinta</h1>
+        <p>Where Board Games Are Forged in Dragon Fire</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="container" id="about">
+        <div class="card">
+            <img class="dragon-emblem" src="https://static.thenounproject.com/png/1581234-200.png" alt="Dragon Icon">
+            <h2>About Us</h2>
+            <p>
+                Xorvinta forges immersive board-game experiences with precision and passion.
+                We empower creators, publishers, and studios with complete manufacturing —
+                from prototypes to large-scale production — elevating every world you build.
+            </p>
+        </div>
+    </section>
+
+    <section class="container" id="services">
+        <div class="card">
+            <h2>Dragon-Forged Expertise</h2>
+            <p>
+                Our craft includes:
+            </p>
+            <ul>
+                <li>Custom boards, cards, tokens & miniatures</li>
+                <li>High-precision printing & premium finishes</li>
+                <li>Prototype & small-batch production</li>
+                <li>Global fulfillment & logistics</li>
+                <li>Sustainable material options</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="container" id="contact">
+        <div class="card">
+            <h2>Summon the Forge</h2>
+            <p>
+                Ready to bring your game to life?
+                Send us a message — our dragons await the call.
+            </p>
+            <a class="btn" href="mailto:hello@xorvinta.com">Contact Us</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; <span id="year"></span> Xorvinta — All rights guarded by dragons.
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
